@@ -1,6 +1,6 @@
 {
   "name": "bexjs",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "JavaScript Bench API wrapper to interact with the BENCH multichain",
   "author": "William Dens <denswilliam1@gmail.com>",
   "license": "MIT",
