@@ -29,8 +29,8 @@ bexjs.getBalance('BSANY312MWN7Nd2any9DFh2bRiZRbQwpuZ')
     console.log(balance); // Return address balance
   });
 
-// Set network to dev ('Main' | 'Dev')
-bexjs.setNetwork('Dev')
+// Set network to dev ('Bench' | 'BenchTest')
+bexjs.setNetwork('BenchTest')
 
 bexjs.getBlocksHeight()
   .then((height) => {
@@ -48,7 +48,7 @@ console.log(keys);
   publicKey: '030bf73cb609f90d47a62eda1c411e5c7ee463db47fba5e5030b0f2932353d5618',
   privateKey: 'cb3e4b3d24e1c67c075de107c6a527cb7d37a1ec7d7f9bc85091c271a6020962',
   passphrase: 'quick tribe subway tackle wolf fitness leopard syrup kitten reject mansion vast',
-  address: 'ASJQHQZyMCCmsXw3Ad2ujiq7Sm8th6eJiy'
+  address: 'BSJQHQZyMCCmsXw3Ad2ujiq7Sm8th6eJiy'
 }
 
 // From passphrase
@@ -59,7 +59,7 @@ console.log(keys);
   publicKey: '02e9239013baf66c98360cd267ba1917674e218a894ac2f36d72e40cffc6e55e8a',
   privateKey: '73079e6c1ebce0c37cf824ee4132a7c2d6a3340cd80eea1aa23b566911b42005',
   passphrase: 'slogan plug release deny solar seed inject tag light winner box oyster',
-  address: 'D7VSQMHvcf3j6o6LxEeAnazYYbVyeTJw4v'
+  address: 'B7VSQMHvcf3j6o6LxEeAnazYYbVyeTJw4v'
 }
 ```
 
@@ -87,14 +87,14 @@ bexjs.sendTransaction(tx)
 ```
 #### Send vote transaction
 ```js
-// Vote for darkjarunik
+// Vote for nomoreheroes
 const tx = api.createVoteTransaction({
   passphrase: 'slogan plug release deny solar seed inject tag light winner box oyster', // Voters passphrase
   delegates: ['+03bd4f16e39aaba5cba6a87b7498b08ce540f279be367e68ae96fb05dfabe203ad'], // Public key of the delegate to vote
   secondPassphrase: null // Second passphrase (optionnal)
 })
 
-// Unvote for darkjarunik
+// Unvote for nomoreheroes
 const tx = api.createVoteTransaction({
   passphrase: 'slogan plug release deny solar seed inject tag light winner box oyster', // Voters passphrase
   delegates: ['-03bd4f16e39aaba5cba6a87b7498b08ce540f279be367e68ae96fb05dfabe203ad'], // Public key of the delegate to unvote
